@@ -97,5 +97,5 @@ jobs:
       with:
         app-name: LakeJacksonCycling
         slot-name: 'Production'
-        publish-profile: $${{MYAPISECERT}}
+        publish-profile: $${{secrets.MYAPISECERT}}
         package: ./publish
