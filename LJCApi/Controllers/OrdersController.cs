@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LakeJacksonCyclingBL;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,18 +12,24 @@ namespace LJCApi.Controllers
     [ApiController]
     public class OrdersController : ControllerBase
     {
-        // GET: api/Orders
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly ILakeJacksonBL repo;
+        public OrdersController(ILakeJacksonBL oInfo)
         {
-            return new string[] { "value1", "value2" };
+            repo = oInfo;
         }
 
         // GET: api/Orders/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        [HttpGet("GetStoreHistory")]
+        public IActionResult GetStoreHistory([FromQuery] int storeid,int eID,string pass)
         {
-            return "value";
+            if(repo.IsAdmin(eID,pass))
+            {
+                return Ok(repo.GetStoreHistory(storeid));
+            }
+            else
+            {
+                return NotFound("please enter a store id ex:1");
+            }
         }
 
         // POST: api/Orders
@@ -42,5 +49,7 @@ namespace LJCApi.Controllers
         public void Delete(int id)
         {
         }
+
+       
     }
 }
