@@ -41,7 +41,7 @@ namespace LJCApi.Controllers
 
         // POST: api/Inventory
         [HttpGet("GetInventoryByStoreID")]
-        public IActionResult GetInventoryByStoreID([FromBody] int storeid)
+        public IActionResult GetInventoryByStoreID([FromQuery] int storeid)
         {
             try
             {
