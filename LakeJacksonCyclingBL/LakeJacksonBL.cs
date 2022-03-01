@@ -124,8 +124,8 @@ namespace LakeJacksonCyclingBL
         {
             try
             {
-                Employee ep = new Employee();
-                ep =  GetAllEmployees().Where(eps => eps.employeeID.Equals(eID) & eps.password.Equals(pass)).First();
+                
+                Employee ep =  GetAllEmployees().First(eps => eps.employeeID.Equals(eID) & eps.password.Equals(pass));
                 return ep.IsAdmin;
             }
             catch (System.Exception)
