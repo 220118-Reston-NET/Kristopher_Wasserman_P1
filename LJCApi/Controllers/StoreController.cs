@@ -12,10 +12,10 @@ namespace LJCApi.Controllers
     [ApiController]
 
    
-    public class StroeController : ControllerBase
+    public class StoreController : ControllerBase
     { 
         private readonly ILakeJacksonBL _repo;
-        public StroeController(ILakeJacksonBL p_cInfoBL)
+        public StoreController(ILakeJacksonBL p_cInfoBL)
         {
             _repo = p_cInfoBL;
         } 
