@@ -5,7 +5,7 @@ namespace LakeJacksonCyclingModel
         public int employeeID {get;set;}
         public string Name{get;set;}
         public string Department{get;set;}
-        public int hireDate {get;set;}
+ 
         public string password{get;set;} 
 
         public bool isEmployee {get;set;}
