@@ -22,32 +22,18 @@ namespace LakeJacksonCyclingModel
                     }
                 }
         }
-        private string sAddress;
-        public string StoreAddress
-        {
-            get{ return sName; }
-            set
-            {
-                if(value != null)
-                {
-                    sName = value;
-                }
-                else
-                {
-                    throw new ValidationException("Please provide a store address");
-                }
-            }
-        }
+       
+        public string StoreAddress{get;set;}
         
         private string sPhone;
         public string Phone 
         {get
-            { return sName; }
+            { return sPhone; }
             set
             {
                 if(value != null)
                 {
-                    sName = value;
+                    sPhone = value;
                 }
                 else
                 {
@@ -58,7 +44,7 @@ namespace LakeJacksonCyclingModel
 
         private string productName;
         public string pName {
-            get{ return sName; }
+            get{ return productName; }
             set
             {
                 if(value != null)

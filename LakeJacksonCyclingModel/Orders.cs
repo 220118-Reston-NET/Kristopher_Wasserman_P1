@@ -28,7 +28,7 @@ namespace LakeJacksonCyclingModel
             get{ return address; }
             set
             {
-                if(address != null )
+                if(address != null || address != "")
                 {
                     address = value;
                 }

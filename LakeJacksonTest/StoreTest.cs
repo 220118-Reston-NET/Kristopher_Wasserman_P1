@@ -32,18 +32,8 @@ namespace LakeJacksonTest
             Assert.NotNull(sm.StoreAddress);
             Assert.Equal(validName,sm.StoreAddress);
         }
-        [Fact]
-        public void ShouldtestStorePhone()
-        {
-            StoreModel sm = new StoreModel();
-            string validPhone = "1234567890";
-
-            sm.StoreAddress = validPhone;
-
-            Assert.NotNull(sm.Phone);
-            Assert.Equal(validPhone,sm.Phone);
-        }
-
+        
+        
         [Fact]
         public void ShouldTestProductName()
         {
