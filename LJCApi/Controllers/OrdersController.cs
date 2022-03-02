@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LakeJacksonCyclingBL;
+using LakeJacksonCyclingModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -34,22 +35,17 @@ namespace LJCApi.Controllers
 
         // POST: api/Orders
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult PlaceOrder([FromQuery] int customerID, int storeID, List<ItemLines> _cart, double totalPrice,int eID,string pass)
         {
+            if(repo.IsAdmin(eID,pass))
+            {
+                return Ok(repo.PlaceOrder(customerID,storeID, _cart, totalPrice));
+            }
+            else
+            {
+                return NotFound("Please Try again");
+            }
         }
-
-        // PUT: api/Orders/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE: api/Orders/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
-
        
     }
 }
