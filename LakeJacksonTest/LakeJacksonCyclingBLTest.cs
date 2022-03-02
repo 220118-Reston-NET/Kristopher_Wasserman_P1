@@ -76,54 +76,6 @@ namespace LakeJacksonTest
             // Then
         }
 
-        [Fact]
-        public void ShouldTestGetAllEmployees()
-        {
-            string name = "Kris";
-            string department = "Manager";
-
-            List<Employee> employee = new List<Employee>();
-            Employee employee1 = new Employee()
-            {
-                Name = name,
-                Department = department,
-            };
-
-            Mock<IRepository> MockRepo = new Mock<IRepository>();
-
-            MockRepo.Setup(repo => repo.GetEmployees()).Returns(employee);
-            ILakeJacksonBL repo = new LakeJacksonBL(MockRepo.Object);
-
-
-            
-            // When
-            Assert.Same(employee,employee1);
-            Assert.Equal(employee1,employee1);
-            Assert.NotNull(employee1);
-        }
-        [Fact]
-        public void ShouldTestGetStoreFront()
-        {
-            string name = "LakeJacksonCycling";
-
-
-            List<StoreFrontModel> store = new List<StoreFrontModel>();
-            StoreFrontModel Store1 = new StoreFrontModel()
-            {
-                StoreName = name
-            };
-
-            Mock<IRepository> MockRepo = new Mock<IRepository>();
-
-            MockRepo.Setup(repo => repo.GetAllStoreFront()).Returns(store);
-            ILakeJacksonBL repo = new LakeJacksonBL(MockRepo.Object);
-
-
-            
-            // When
-            Assert.Same(store,Store1);
-            Assert.Equal(Store1,Store1);
-            Assert.NotNull(Store1);
-        }
+       
     }
 }
