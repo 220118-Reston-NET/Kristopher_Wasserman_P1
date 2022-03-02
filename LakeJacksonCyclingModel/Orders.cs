@@ -17,7 +17,7 @@ namespace LakeJacksonCyclingModel
         
         public string storeName{get;set;}
 
-        public string StoreAddress{get;set} 
+        public string StoreAddress{get;set;} 
         
         public decimal OrderTotal {get;set;}
 
