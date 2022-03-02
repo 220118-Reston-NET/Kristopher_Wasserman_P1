@@ -1,5 +1,7 @@
+global using Serilog;
 using LakeJacksonCyclingBL;
 using LakeJacksonCyclingDL;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+Log.Logger = new LoggerConfiguration().WriteTo.File("./logs/user.txt").CreateLogger();
 builder.Services.AddScoped<IRepository>(repo => new SqlRepository(builder.Configuration.GetConnectionString("Reference2DB")));
 builder.Services.AddScoped<ILakeJacksonBL, LakeJacksonBL>();
 

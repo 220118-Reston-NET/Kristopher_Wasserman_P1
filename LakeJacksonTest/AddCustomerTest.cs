@@ -9,7 +9,12 @@ namespace LakeJacksonTest
         [Fact]
         public void AddCustomerNameData()
         {
+
             //Arrange
+            /// <summary>
+            /// test the validation for customer name
+            /// </summary>
+            /// <returns></returns>
             Customers cName = new Customers(); /* thos arrange Customer name for test*/
             string validName = "Kristopher";
             
