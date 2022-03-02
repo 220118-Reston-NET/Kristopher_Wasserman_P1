@@ -51,7 +51,7 @@ namespace LJCApi.Controllers
         /// <param name="eID"></param>
         /// <param name="pass"></param>
         /// <returns></returns>
-        [HttpPost]
+        [HttpPost("PlaceOrder")]
         public IActionResult PlaceOrder([FromQuery] int customerID, int storeID, List<ItemLines> _cart, double totalPrice,int eID,string pass)
         {
             if(repo.IsAdmin(eID,pass))

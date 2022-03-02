@@ -1,0 +1,4 @@
+2022-03-02 09:17:37.383 -06:00 [INF] A manager enter GetAllCustomer
+2022-03-02 09:24:18.488 -06:00 [INF] User looked up all customers by a id
+2022-03-02 09:24:20.294 -06:00 [ERR] The user made an error at getcustomerbyidSequence contains no elements
+2022-03-02 09:24:36.696 -06:00 [INF] User looked up all customers by a id

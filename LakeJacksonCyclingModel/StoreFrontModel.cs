@@ -12,7 +12,7 @@ namespace LakeJacksonCyclingModel
             get{ return sName; }
             set
             {
-                if(value != null || value != " ")
+                if(value != null)
                 {
                     sName = value;
                 }

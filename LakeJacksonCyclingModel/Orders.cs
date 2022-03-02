@@ -28,7 +28,7 @@ namespace LakeJacksonCyclingModel
             get{ return address; }
             set
             {
-                if(address != null || address != " ")
+                if(address != null )
                 {
                     address = value;
                 }
@@ -65,7 +65,7 @@ namespace LakeJacksonCyclingModel
             get{return SAddress; }
             set
             {
-                if(value != null || value != " ")
+                if(value != null )
                 {
                     SAddress = value;
                 }
