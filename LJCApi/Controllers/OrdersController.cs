@@ -19,6 +19,19 @@ namespace LJCApi.Controllers
             repo = oInfo;
         }
 
+
+        [HttpGet("GetCustomerHistory")]
+        public IActionResult GetCustomerHistory([FromQuery] int orderID,int eID,string pass)
+        {
+            if(repo.IsAdmin(eID,pass))
+            {
+                return Ok(repo.GetCustomerHistory(orderID));
+            }
+            else{
+                return StatusCode(401, "Not Autherized");
+            }
+        }
+
        /// <summary>
        /// This will get the order history for a single store. But Manager permission will be needed
        /// </summary>
@@ -26,6 +39,8 @@ namespace LJCApi.Controllers
        /// <param name="eID"></param>
        /// <param name="pass"></param>
        /// <returns></returns>
+       /// 
+       
         [HttpGet("GetStoreHistory")]
         public IActionResult GetStoreHistory([FromQuery] int storeid,int eID,string pass)
         {

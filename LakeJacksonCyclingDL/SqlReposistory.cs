@@ -162,7 +162,7 @@ namespace LakeJacksonCyclingDL
             }
         }
 
-        public Orders PlaceOrder(int customerID, int storeID, List<ItemLines> _cart, double totalPrice)
+        public Orders PlaceOrder(int customerID, int storeID,List<ItemLines> _cart,  double totalPrice)
         {
             Orders order = new Orders();
             string sqlQuery = @"insert into Orders values(@storeID, @customerID,@OrderTotal); Select scope_identity()";

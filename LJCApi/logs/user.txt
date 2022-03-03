@@ -2,3 +2,25 @@
 2022-03-02 09:24:18.488 -06:00 [INF] User looked up all customers by a id
 2022-03-02 09:24:20.294 -06:00 [ERR] The user made an error at getcustomerbyidSequence contains no elements
 2022-03-02 09:24:36.696 -06:00 [INF] User looked up all customers by a id
+2022-03-02 13:27:43.289 -06:00 [INF] A manager enter GetAllCustomer
+2022-03-02 13:28:32.915 -06:00 [INF] A Manager has added a new customer to the company. Money!
+2022-03-02 13:28:59.637 -06:00 [INF] User has looked up the Inventory of the company
+2022-03-02 13:29:17.792 -06:00 [INF] user looked up the inventory for a store
+2022-03-02 13:29:57.674 -06:00 [INF] A manager place a new order for a customer
+2022-03-02 13:30:41.902 -06:00 [INF] The Manager has accessed order history for the store
+2022-03-02 13:31:42.286 -06:00 [INF] the manager added more products
+2022-03-02 13:32:26.620 -06:00 [INF] The user replienished the store.
+2022-03-02 13:32:39.440 -06:00 [INF] The user replienished the store.
+2022-03-02 13:33:00.768 -06:00 [INF] user has looked up the products of the company
+2022-03-02 13:33:13.700 -06:00 [INF] The user replienished the store.
+2022-03-02 13:33:37.276 -06:00 [INF] Customer looked up all stores within company
+2022-03-02 13:46:56.699 -06:00 [INF] The Manager has accessed order history for the store
+2022-03-02 13:49:46.874 -06:00 [INF] The Manager has accessed order history for the store
+2022-03-02 13:52:47.522 -06:00 [INF] A manager enter GetAllCustomer
+2022-03-02 13:53:12.199 -06:00 [INF] A manager place a new order for a customer
+2022-03-02 13:55:38.569 -06:00 [INF] A manager place a new order for a customer
+2022-03-02 13:57:17.967 -06:00 [INF] User has looked up the Inventory of the company
+2022-03-02 13:57:52.821 -06:00 [INF] A manager place a new order for a customer
+2022-03-02 14:00:48.031 -06:00 [INF] A manager place a new order for a customer
+2022-03-02 14:02:47.113 -06:00 [INF] The Manager has accessed order history for the store
+2022-03-03 09:03:31.341 -06:00 [INF] The user replienished the store.
