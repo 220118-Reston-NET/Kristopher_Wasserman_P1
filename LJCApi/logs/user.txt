@@ -24,3 +24,5 @@
 2022-03-02 14:00:48.031 -06:00 [INF] A manager place a new order for a customer
 2022-03-02 14:02:47.113 -06:00 [INF] The Manager has accessed order history for the store
 2022-03-03 09:03:31.341 -06:00 [INF] The user replienished the store.
+2022-03-03 09:14:22.143 -06:00 [INF] Customer looked up a store information
+2022-03-03 09:15:18.737 -06:00 [INF] The user replienished the store.

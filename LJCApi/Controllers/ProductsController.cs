@@ -103,13 +103,13 @@ namespace LJCApi.Controllers
         /// <param name="quantity"></param>
         /// <returns></returns>
         [HttpPut("ReplinishInventory")]
-        public IActionResult ReplemishInventory([FromQuery] int storeid,[FromQuery] int productid,[FromQuery] int quantity)
+        public IActionResult ReplemishInventory([FromQuery] int storeid, int productid, int quantity)
         {
             
                 try
                 {
                     Log.Information("The user replienished the store.");
-                    return Ok(_repo.ReplemishInventory(storeid, productid,quantity));
+                    return Ok(_repo.ReplemishInventory(storeid, productid, quantity));
                 }
                 catch (Exception ex)
                 {

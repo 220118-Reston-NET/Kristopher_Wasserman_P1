@@ -47,7 +47,7 @@ namespace LJCApi.Controllers
         /// <param name="storeid"></param>
         /// <returns></returns>
         [HttpGet("GetAllStoresByID")]
-        public IActionResult GetAllStoresByID([FromBody] int storeid)
+        public IActionResult GetAllStoresByID([FromQuery] int storeid)
         {
             try
             {
